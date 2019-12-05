@@ -144,3 +144,18 @@ newNavItem2.style.color = "green";
 //make the button change colors on click?
 
 const colorArr = ["red", "blue", "pink", "green", "violet", "hotpink", "lightslategray"];
+
+let random = Math.floor(Math.random() * ((colorArr.length) - 0) + 0);
+let random2 = Math.floor(Math.random() * ((colorArr.length) - 0) + 0);
+let random3 = Math.floor(Math.random() * ((colorArr.length) - 0) + 0);
+
+let buttonStyle = document.querySelector('button');
+
+buttonStyle.addEventListener('mouseover', (e) => {
+    buttonStyle.style.backgroundColor = `${colorArr[random]}`;
+})
+buttonStyle.addEventListener('mouseout', (e) => {
+    buttonStyle.style.backgroundColor = `${colorArr[random2]}`;
+})
+console.log(random);
+console.log(random2);
